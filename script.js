@@ -3,7 +3,7 @@ const quote = document.querySelector("#quote");
 const author = document.querySelector("#author");
 
 async function getQuote(url) {
-    const response = await fetch(url);
+    const response = await fetch(api_url);
     let data = await response.json();
 
     quote.innerHTML = data.content;
